@@ -5,11 +5,7 @@ export default function AppMenu() {
   return (
     <div id="menu">
       <div id="logo-wrapper">
-        <img
-          id="logo"
-          src="./images/Screenshot_2023-07-08_at_5.48.29_PM-removebg-preview.png"
-          alt=""
-        />
+        <img id="logo" src="/logo-nb.png" alt="" />
       </div>
       <div>
         <ul>
