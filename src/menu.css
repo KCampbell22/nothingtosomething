@@ -1,3 +1,7 @@
+:root {
+    --logo-blue: #1d4ed8;
+  }
+
 #menu {
     position: relative;
     display: flex;
