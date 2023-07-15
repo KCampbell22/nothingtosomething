@@ -20,7 +20,7 @@ function ContactForm() {
     formData.append("email", email);
     formData.append("comment", comment);
 
-    fetch("./src/form.php", {
+    fetch("form.php", {
       method: "POST",
       body: formData,
     })
