@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu.css";
 
-export default function AppMenu() {
+export default function AppMenu({ visibleSection, handleMenuClick }) {
   return (
     <div id="menu">
       <div id="logo-wrapper">
@@ -10,16 +10,40 @@ export default function AppMenu() {
       <div>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a
+              href="#home"
+              onClick={() => handleMenuClick("home")}
+              className={visibleSection === "home" ? "active" : ""}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a
+              href="#about"
+              onClick={() => handleMenuClick("about")}
+              className={visibleSection === "about" ? "active" : ""}
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="#contact"
+              onClick={() => handleMenuClick("contact")}
+              className={visibleSection === "contact" ? "active" : ""}
+            >
+              Contact
+            </a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a
+              href="#services"
+              onClick={() => handleMenuClick("services")}
+              className={visibleSection === "services" ? "active" : ""}
+            >
+              Services
+            </a>
           </li>
         </ul>
       </div>
