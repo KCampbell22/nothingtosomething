@@ -42,7 +42,7 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} netlify>
+    <form onSubmit={handleSubmit} data-netlify={"true"}>
       <div>
         <label htmlFor="firstName">First Name:</label>
         <input
