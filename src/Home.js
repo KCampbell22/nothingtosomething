@@ -11,24 +11,6 @@ export default function Home() {
         work or are interested in working in trucking, transportation,
         logistics, and warehousing.
       </h2>
-
-      <div className="buttons">
-        <span className="button-wrap">
-          <a href="#about" className="btn">
-            About
-          </a>
-        </span>
-        <span className="button-wrap">
-          <a href="#contact" className="btn">
-            Contact
-          </a>
-        </span>
-        <span className="button-wrap">
-          <a href="#services" className="btn">
-            Services
-          </a>
-        </span>
-      </div>
     </div>
   );
 }

@@ -9,40 +9,20 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    const formData = new FormData();
-    formData.append("firstName", firstName);
-    formData.append("lastName", lastName);
-    formData.append("phoneNumber", phoneNumber);
-    formData.append("dateOfInquiry", dateOfInquiry);
-    formData.append("email", email);
-    formData.append("comment", comment);
-
-    fetch("form.php", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        console.log(data); // Success or error message returned by the PHP script
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-
-    // Reset form fields
-    setFirstName("");
-    setLastName("");
-    setPhoneNumber("");
-    setDateOfInquiry("");
-    setEmail("");
-    setComment("");
+    const myForm = event.target;
+    const formData = new FormData(myForm);
   };
 
   return (
-    <form onSubmit={handleSubmit} data-netlify={"true"}>
+    <form
+      name="contact"
+      onSubmit={handleSubmit}
+      method="POST"
+      data-netlify={"true"}
+    >
       <div>
         <label htmlFor="firstName">First Name:</label>
         <input

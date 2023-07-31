@@ -20,3 +20,13 @@
 #logo-big{
     max-height: 300px;
 }
+/*small mobile devices*/
+@media screen and (max-width: 425px){
+    #home{
+        padding: 0px;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    
+}
