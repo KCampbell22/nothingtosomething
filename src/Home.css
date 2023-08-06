@@ -26,6 +26,9 @@
         padding: 0px;
         margin-top: 1rem;
     }
+    #logo-big{
+        max-width: 100px;
+    }
 }
 @media screen and (max-width: 320px) {
     
